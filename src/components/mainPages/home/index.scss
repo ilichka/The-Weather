@@ -1,0 +1,119 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 0;
+  min-height: calc(100vh - 87px);
+  justify-content: space-around;
+  color: #07b299;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .city {
+        font-size: 26px;
+      }
+
+      .temp {
+        font-size: 46px;
+        margin: 15px 0;
+      }
+
+      .status {
+        padding: 7px 10px;
+        border: 1px solid;
+        border-radius: 20px;
+        color: #fff;
+        background: #95aea9;
+      }
+    }
+
+    .header-icon {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .info-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .humidity-info,
+    .wind-info,
+    .pressure-info {
+      align-items: center;
+      display: flex;
+
+      .humidity-icon,
+      .wind-icon,
+      .pressure-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .hourly-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .hour-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .hour-icon {
+        width: 32px;
+        height: 32px;
+        margin: 12px 0;
+      }
+
+      .temp {
+        color: #1e90ff;
+        font-size: 32px;
+      }
+    }
+  }
+
+  .next-days {
+    display: flex;
+    flex-direction: column;
+
+    .day-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .day {
+        min-width: 30%;
+        font-size: 26px;
+      }
+
+      .day-icon {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+      }
+
+      .max-temp {
+        margin-right: 15px;
+        color: #1e90ff;
+        font-size: 22px;
+      }
+
+      .min-temp {
+        color: #95aea9;
+      }
+    }
+  }
+}

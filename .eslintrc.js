@@ -11,5 +11,11 @@ module.exports = {
   plugins: ["prettier"],
   rules: {
     "prettier/prettier": "error",
+    "no-restricted-globals": "off",
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "guard-for-in": "off",
+    "no-restricted-syntax": "off",
+    "no-unused-expressions": "off",
   },
 };

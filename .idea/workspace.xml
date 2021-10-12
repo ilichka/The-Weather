@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a647a884-10c2-4507-bdf7-ac962cd83c7c" name="Default Changelist" comment="" />
+    <list default="true" id="a7bf2bc3-e4cf-48d7-b59e-f334ee6e2ed1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/home-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/like-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/loupe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/more-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/pressure.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/waterdrop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/wind.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/helpers/msg/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/helpers/msg/msg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/footer/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/footer/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/home/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/home/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/searchPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pritterignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,20 +43,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1zDRlbMNZoYTO4RM5mHA3L6oslX" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/The-Weather.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1zGriQ1rzdPbvD5HXHU7qwiemSB" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\git\The-Weather\src" />
-      <recent name="C:\Users\User\git\The-Weather" />
-      <recent name="C:\Users\User\git\The-Weather\assets" />
-      <recent name="C:\Users\User\git\The-Weather\assets\components\mainPages" />
-    </key>
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -38,34 +77,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="serve" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.serve" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a647a884-10c2-4507-bdf7-ac962cd83c7c" name="Default Changelist" comment="" />
-      <created>1633680823947</created>
+      <changelist id="a7bf2bc3-e4cf-48d7-b59e-f334ee6e2ed1" name="Default Changelist" comment="" />
+      <created>1633785391809</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633680823947</updated>
-      <workItem from="1633680828951" duration="12084000" />
+      <updated>1633785391809</updated>
+      <workItem from="1633785394313" duration="7804000" />
+      <workItem from="1633858547960" duration="54365000" />
     </task>
     <servers />
   </component>
@@ -77,7 +100,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

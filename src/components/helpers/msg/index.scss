@@ -1,0 +1,14 @@
+.msg {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  padding: 30px 60px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+
+  &.visible {
+    display: block;
+  }
+}
