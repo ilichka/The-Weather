@@ -18,11 +18,12 @@ const getObj = () => {
 
 const morePage = () => {
   const page = document.createElement("div");
-  const obj = getObj();
+  const obj = getObj() || {};
   page.classList.add("more-page");
-  const { city, country, temp, humidity, wind, icon } =
-    obj[Object.keys(obj)[0]] || {};
-  page.innerHTML = obj
+  const { city, country, temp, humidity, wind, icon } = Object.keys(obj).length
+    ? obj[Object.keys(obj)[0]]
+    : {};
+  page.innerHTML = Object.keys(obj).length
     ? `
   <div class="ur-location">
           <img class="location-icon" src="${locationIcon.default}" alt="location"/>

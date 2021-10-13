@@ -2,6 +2,7 @@ import "./index.scss";
 import * as waterDropIcon from "../../../assets/img/waterdrop.svg";
 import * as windIcon from "../../../assets/img/wind.svg";
 import * as pressureIcon from "../../../assets/img/pressure.svg";
+import errorHandler from "../../../utils/utils";
 
 const days = [
   "Sunday",
@@ -104,13 +105,11 @@ const getObj = (lat, long) => {
         hourRow(data.hourly);
         dayRow(data.daily);
       } else {
-        document.querySelector(
-          ".search-page"
-        ).innerHTML = `<span>Service error</span>`;
+        errorHandler(data.message);
       }
     })
     .catch(() => {
-      // errorHandler();
+      errorHandler(`Something went wrong`);
     });
 };
 

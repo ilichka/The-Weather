@@ -3,18 +3,9 @@ import * as waterDropIcon from "../../../assets/img/waterdrop.svg";
 import * as windIcon from "../../../assets/img/wind.svg";
 import * as loupeIcon from "../../../assets/img/loupe.svg";
 import * as pencilIcon from "../../../assets/img/pencil.svg";
+import errorHandler from "../../../utils/utils";
 
 let timeout;
-
-const errorHandler = (inner) => {
-  const msg = document.querySelector(".msg");
-  msg.innerHTML = inner;
-  document.querySelector(".msg").classList.add("visible");
-  setTimeout(
-    () => document.querySelector(".msg").classList.remove("visible"),
-    3000
-  );
-};
 
 const createCard = (obj, id) => {
   const { city, country, temp, humidity, wind, icon } = obj;
@@ -81,7 +72,7 @@ const getCityList = (cityName) => {
           ).innerHTML = `<span class="no-match">There is no such city:c</span>`;
         }
       } else {
-        errorHandler(`Server error`);
+        errorHandler(data.message);
       }
     })
     .catch(() => {
@@ -112,7 +103,7 @@ const searchPage = () => {
   page.innerHTML = `
         <div class="search-row">
           <img class="icon" src="${loupeIcon.default}" alt="loupe"/>
-          <input placeholder="Search" class="search-input" />
+          <input placeholder="Search" class="search-input" minlength="3"/>
           <img class="icon" src="${pencilIcon.default}" alt="pencil"/>
         </div>
         <div class="cards-block"></div>`;
