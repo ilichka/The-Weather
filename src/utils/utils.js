@@ -1,11 +1,21 @@
 const errorHandler = (inner) => {
-  const msg = document.querySelector(".msg");
-  msg.innerHTML = inner;
-  document.querySelector(".msg").classList.add("visible");
+  const message = document.querySelector(".message");
+  message.innerHTML = inner;
+  document.querySelector(".message").classList.add("visible");
   setTimeout(
-    () => document.querySelector(".msg").classList.remove("visible"),
+    () => document.querySelector(".message").classList.remove("visible"),
     3000
   );
 };
 
-export default errorHandler;
+const setNoMatchHTML = (str) => {
+  document.querySelector(
+    ".cards-block"
+  ).innerHTML = `<span class="no-match">${str}</span>`;
+};
+
+const clearCardsBlock = () => {
+  document.querySelector(".cards-block").innerHTML = ``;
+};
+
+export { errorHandler, setNoMatchHTML, clearCardsBlock };
