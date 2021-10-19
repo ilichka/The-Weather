@@ -27,7 +27,6 @@
 
       .status {
         padding: 7px 10px;
-        border: 1px solid;
         border-radius: 20px;
         color: #fff;
         background: #95aea9;
@@ -113,6 +112,39 @@
 
       .min-temp {
         color: #95aea9;
+      }
+    }
+  }
+}
+
+.dark-theme {
+  background-color: black;
+
+  .home-page {
+    color: #8e05c2;
+
+    .header-info {
+      .status {
+        color: #1597bb;
+        background: #3e065f;
+      }
+    }
+
+    .hourly-weather {
+      .hour-block {
+        .temp {
+          color: #3d2c8d;
+        }
+      }
+    }
+
+    .next-days {
+      .max-temp {
+        color: #700b97;
+      }
+
+      .min-temp {
+        color: #3d2c8d;
       }
     }
   }

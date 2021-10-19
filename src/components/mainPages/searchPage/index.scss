@@ -123,3 +123,40 @@
     }
   }
 }
+
+.dark-theme {
+  .search-row {
+    .icon {
+      fill: #8e05c2;
+    }
+
+    .search-input {
+      color: #8e05c2;
+    }
+  }
+
+  .cards-block {
+    .card {
+      background: #3e065f;
+      .top {
+        .weather-info {
+          color: #1597bb;
+        }
+      }
+
+      .bottom {
+        .humidity-info {
+          .humidity {
+            color: #1597bb;
+          }
+        }
+
+        .wind-info {
+          .wind-speed {
+            color: #1597bb;
+          }
+        }
+      }
+    }
+  }
+}

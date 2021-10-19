@@ -33,7 +33,6 @@
 
   .status {
     padding: 7px 10px;
-    border: 1px solid;
     border-radius: 20px;
     color: white;
     background: #95aea9;
@@ -90,6 +89,31 @@
 
       .value {
         color: dodgerblue;
+      }
+    }
+  }
+}
+
+.dark-theme {
+  .more-page {
+    color: #8e05c2;
+
+    .ur-location {
+      .location-icon {
+        fill: #8e05c2;
+      }
+    }
+
+    .status {
+      color: #1597bb;
+      background: #3e065f;
+    }
+
+    .btn-rows {
+      .btn-row {
+        .value {
+          color: #3d2c8d;
+        }
       }
     }
   }
