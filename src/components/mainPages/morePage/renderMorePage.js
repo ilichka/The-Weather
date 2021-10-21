@@ -2,23 +2,22 @@ import "./index.scss";
 import * as waterDropIcon from "../../../assets/img/waterdrop.svg";
 import * as windIcon from "../../../assets/img/wind.svg";
 import * as pressureIcon from "../../../assets/img/pressure.svg";
-import { rows } from "../../../utils/consts";
+import { BUTTON_ROWS } from "../../../utils/consts";
 
 const renderButtonRows = () => {
-  const btnRows = document.createElement("div");
-  btnRows.classList.add("btn-rows");
-  rows.forEach((obj) => {
+  let rowsBlock = ``;
+  BUTTON_ROWS.forEach((obj) => {
     const { name, value } = obj;
-    btnRows.innerHTML += `<div class="btn-row">
+    rowsBlock += `<div class="btn-row">
             <span class="name">${name}</span>
             <span class="value">${value}</span>
             <div class="arrow">&gt;</div>
           </div>`;
   });
-  return btnRows;
+  return rowsBlock;
 };
 
-const renderMorePage = (obj) => {
+export default (obj) => {
   if (Object.keys(obj).length) {
     const { city, country, temp, humidity, wind, icon } =
       obj[Object.keys(obj)[0]];
@@ -33,7 +32,9 @@ const renderMorePage = (obj) => {
         <div class="temp">${temp}°</div>
         <div class="info-row">
           <div class="humidity-info">
-            <img class="humidity-icon" src="${waterDropIcon.default}" alt="water drop"/>
+            <img class="humidity-icon" src="${
+              waterDropIcon.default
+            }" alt="water drop"/>
             <span class="humidity">${humidity}%</span>
           </div>
           <div class="wind-info">
@@ -41,13 +42,14 @@ const renderMorePage = (obj) => {
             <span class="wind-speed">${wind}km/h</span>
           </div>
           <div class="pressure-info">
-            <img class="pressure-icon" src="${pressureIcon.default}" alt="pressure"/>
+            <img class="pressure-icon" src="${
+              pressureIcon.default
+            }" alt="pressure"/>
             <span class="pressure">0.43mBar</span>
           </div>
         </div>
+        <div class="btn-rows">${renderButtonRows()}</div>
   `;
   }
   return `<span class="no-match">Your history is clean:c</span>`;
 };
-
-export { renderMorePage, renderButtonRows };

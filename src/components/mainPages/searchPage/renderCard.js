@@ -1,13 +1,26 @@
 import * as waterDropIcon from "../../../assets/img/waterdrop.svg";
 import * as windIcon from "../../../assets/img/wind.svg";
+import {
+  getLocalStorageField,
+  setLocalStorageField,
+} from "../../../utils/localStorageManager";
+import { LOCAL_STORAGE_KEYS } from "../../../utils/consts";
 
 const addCardListener = (node, obj, id) => {
   node.addEventListener("click", () => {
-    const history = JSON.parse(localStorage.getItem("history"));
+    const history = JSON.parse(
+      getLocalStorageField(LOCAL_STORAGE_KEYS.HISTORY)
+    );
     const newHistory = history ? { ...history, [id]: obj } : { [id]: obj };
     const lastClicked = { [id]: obj };
-    localStorage.setItem("history", JSON.stringify(newHistory));
-    localStorage.setItem("lastClicked", JSON.stringify(lastClicked));
+    setLocalStorageField(
+      LOCAL_STORAGE_KEYS.HISTORY,
+      JSON.stringify(newHistory)
+    );
+    setLocalStorageField(
+      LOCAL_STORAGE_KEYS.LAST_CLICKED,
+      JSON.stringify(lastClicked)
+    );
     location.hash = "more";
   });
 };
@@ -35,12 +48,10 @@ const getCardHTML = (obj) => {
           `;
 };
 
-const renderCard = (obj, id) => {
+export default (obj, id) => {
   const cardWrapper = document.createElement("div");
   cardWrapper.classList.add("card");
   cardWrapper.innerHTML = getCardHTML(obj);
   addCardListener(cardWrapper, obj, id);
-  document.querySelector(".cards-block").appendChild(cardWrapper);
+  return cardWrapper;
 };
-
-export default renderCard;

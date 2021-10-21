@@ -3,16 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="a7bf2bc3-e4cf-48d7-b59e-f334ee6e2ed1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/more-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/more-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helpers/message/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helpers/message/message.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helpers/switchButton/switchButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/helpers/switchButton/switchButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mainPages/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/footer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/footer/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/morePage/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/renderDayRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/renderDayRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/renderHourRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/renderHourRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mainPages/morePage/renderMorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/renderMorePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/addListenerToInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/addListenerToInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/initialCardsRender.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/initialCardsRender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderSearchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderSearchPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/searchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/searchPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requester.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/requester.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/createRouter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +72,7 @@
       <workItem from="1633858547960" duration="55089000" />
       <workItem from="1634122608788" duration="3558000" />
       <workItem from="1634553150003" duration="15878000" />
-      <workItem from="1634600052896" duration="7575000" />
+      <workItem from="1634600052896" duration="50375000" />
     </task>
     <servers />
   </component>

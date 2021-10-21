@@ -11,7 +11,7 @@ const switchButton = () => {
   const switchBtn = document.createElement("div");
   switchBtn.classList.add("switch-btn");
   addBtnListener(switchBtn);
-  document.querySelector(".footer").appendChild(switchBtn);
+  return switchBtn;
 };
 
 export default switchButton;

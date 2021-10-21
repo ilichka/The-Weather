@@ -1,66 +1,54 @@
-import { errorHandler } from "./utils/utils";
+import { LOCAL_STORAGE_KEYS } from "./utils/consts";
+import { getLocalStorageField } from "./utils/localStorageManager";
+import request from "./utils/request";
+
+const API_KEY = "d0b9cf5011a1d4ea6ac31f2492fda53d";
 
 const getMoreCityInfo = () => {
-  const lastClicked = localStorage.getItem("lastClicked");
+  const lastClicked = getLocalStorageField(LOCAL_STORAGE_KEYS.LAST_CLICKED);
   if (lastClicked) {
     return JSON.parse(lastClicked);
   }
-  const history = JSON.parse(localStorage.getItem("history"));
+  const history = JSON.parse(getLocalStorageField(LOCAL_STORAGE_KEYS.HISTORY));
   if (history) {
     return JSON.parse(history[0]);
   }
   return null;
 };
 
-const getCityListByName = (cityName, callback) => {
-  console.log(cityName, callback);
-  const key = "d0b9cf5011a1d4ea6ac31f2492fda53d";
-  fetch(
-    `https://api.openweathermap.org/data/2.5/find?q=${cityName}&type=like&units=metric&sort=population&cnt=3&appid=${key}`
-  )
-    .then((resp) => resp.json()) // Convert data to json
-    .then((data) => {
-      callback(data);
-    })
-    .catch((err) => {
-      console.log(err);
-      errorHandler(`${err}`);
-    });
-};
+const getCityListByName = (cityName) =>
+  request(
+    `https://api.openweathermap.org/data/2.5/find?q=${cityName}&type=like&units=metric&sort=population&cnt=3&appid=${API_KEY}`
+  );
 
-const getCityListByCoordinates = (lat, long, callback) => {
+const getCityListByCoordinates = (lat, long) => {
   if (!lat || !long) {
     lat = 43.10535;
     long = -75.29128;
   }
-  const key = "d0b9cf5011a1d4ea6ac31f2492fda53d";
-  fetch(
-    `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${key}&units=metric`
-  )
-    .then((resp) => resp.json()) // Convert data to json
-    .then((data) => {
-      callback(data);
-    })
-    .catch((err) => {
-      errorHandler(`${err}`);
-    });
+  return request(
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`
+  );
 };
 
-const getLocation = (callback) => {
+const getLocation = () => {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (cb) => {
-        getCityListByCoordinates(
-          cb.coords.latitude,
-          cb.coords.longitude,
-          callback
-        );
-      },
-      () => {
-        getCityListByCoordinates(43.10535, -75.29128, callback);
-      }
-    );
+    return new Promise((resolve) => {
+      navigator.geolocation.getCurrentPosition(
+        (cb) => {
+          getCityListByCoordinates(
+            cb.coords.latitude,
+            cb.coords.longitude
+          ).then(resolve);
+        },
+        () => {
+          getCityListByCoordinates(43.10535, -75.29128).then(resolve);
+        }
+      );
+    });
   }
+
+  return undefined;
 };
 
 export { getMoreCityInfo, getCityListByName, getLocation };

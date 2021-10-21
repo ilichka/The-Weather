@@ -2,13 +2,13 @@ import "./index.scss";
 import * as waterDropIcon from "../../../assets/img/waterdrop.svg";
 import * as windIcon from "../../../assets/img/wind.svg";
 import * as pressureIcon from "../../../assets/img/pressure.svg";
-import { errorHandler } from "../../../utils/utils";
 import { getLocation } from "../../../requester";
 import renderDayRow from "./renderDayRow";
 import renderHourRow from "./renderHourRow";
+import { addNotification } from "../../../utils/notificationService/notificationService";
 
 const getHomeHTML = (obj) => {
-  const { city, temp, status, humidity, wind, icon } = obj || {};
+  const { city, temp, status, humidity, wind, icon, hourly, daily } = obj || {};
   return `
         <div class="header">
           <div class="header-info">
@@ -20,7 +20,9 @@ const getHomeHTML = (obj) => {
         </div>
         <div class="info-row">
           <div class="humidity-info">
-            <img class="humidity-icon" src="${waterDropIcon.default}" alt="water drop"/>
+            <img class="humidity-icon" src="${
+              waterDropIcon.default
+            }" alt="water drop"/>
             <span class="humidity">${humidity}%</span>
           </div>
           <div class="wind-info">
@@ -28,41 +30,44 @@ const getHomeHTML = (obj) => {
             <span class="wind-speed">${wind}km/h</span>
           </div>
           <div class="pressure-info">
-            <img class="pressure-icon" src="${pressureIcon.default}" alt="pressure"/>
+            <img class="pressure-icon" src="${
+              pressureIcon.default
+            }" alt="pressure"/>
             <span class="pressure">0.43mBar</span>
           </div>
         </div>
-        <div class="hourly-weather"></div>
-        <div class="next-days"></div>
+        <div class="hourly-weather">${renderHourRow(hourly)}</div>
+        <div class="next-days">${renderDayRow(daily)}</div>
      `;
 };
 
-const initPage = (obj) => {
-  const page = document.createElement("div");
-  page.classList.add("home-page");
-  page.innerHTML = getHomeHTML(obj);
-  document.querySelector(".app").appendChild(page);
-};
-
-const callbackFunction = (data) => {
-  if (!data.cod) {
-    initPage({
-      city: data.timezone,
-      temp: Math.round(data.current.temp),
-      status: data.current.weather[0].description,
-      humidity: data.current.humidity,
-      wind: data.current.wind_speed,
-      icon: data.current.weather[0].icon,
+const initPage = async (element) => {
+  const locations = await getLocation();
+  if (!locations.cod) {
+    const fragment = document.createElement("div");
+    fragment.classList.add("home-page");
+    fragment.innerHTML = getHomeHTML({
+      city: locations.timezone,
+      temp: Math.round(locations.current.temp),
+      status: locations.current.weather[0].description,
+      humidity: locations.current.humidity,
+      wind: locations.current.wind_speed,
+      icon: locations.current.weather[0].icon,
+      hourly: locations.hourly,
+      daily: locations.daily,
     });
-    renderHourRow(data.hourly);
-    renderDayRow(data.daily);
+    element.appendChild(fragment);
   } else {
-    errorHandler(data.message);
+    addNotification("error", locations.message);
   }
 };
 
 const homePage = () => {
-  getLocation(callbackFunction);
+  const page = document.createElement("div");
+
+  initPage(page);
+
+  return page;
 };
 
 export default homePage;

@@ -1,13 +1,10 @@
 import { getMoreCityInfo } from "../../../requester";
-import { renderMorePage, renderButtonRows } from "./renderMorePage";
+import renderMorePage from "./renderMorePage";
 
-const morePage = () => {
+export default () => {
   const page = document.createElement("div");
   page.classList.add("more-page");
   const obj = getMoreCityInfo() || {};
   page.innerHTML = renderMorePage(obj);
-  page.appendChild(renderButtonRows());
-  document.querySelector(".app").appendChild(page);
+  return page;
 };
-
-export default morePage;

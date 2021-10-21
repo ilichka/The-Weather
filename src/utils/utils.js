@@ -1,21 +1,13 @@
-const errorHandler = (inner) => {
-  const message = document.querySelector(".message");
-  message.innerHTML = inner;
-  document.querySelector(".message").classList.add("visible");
-  setTimeout(
-    () => document.querySelector(".message").classList.remove("visible"),
-    3000
-  );
+const clearBlockById = (id) => {
+  document.getElementById(id).innerHTML = ``;
 };
 
-const setNoMatchHTML = (str) => {
-  document.querySelector(
-    ".cards-block"
-  ).innerHTML = `<span class="no-match">${str}</span>`;
+const renderPageById = (id, child) => {
+  document.getElementById(id).appendChild(child);
 };
 
-const clearCardsBlock = () => {
-  document.querySelector(".cards-block").innerHTML = ``;
+const setInnerHTMLById = (id, innerHTML) => {
+  document.getElementById(id).innerHTML = innerHTML;
 };
 
-export { errorHandler, setNoMatchHTML, clearCardsBlock };
+export { clearBlockById, renderPageById, setInnerHTMLById };

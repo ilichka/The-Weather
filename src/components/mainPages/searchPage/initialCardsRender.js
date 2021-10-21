@@ -1,16 +1,19 @@
 import renderCard from "./renderCard";
-import { setNoMatchHTML, clearCardsBlock } from "../../../utils/utils";
+import { getLocalStorageField } from "../../../utils/localStorageManager";
+import { LOCAL_STORAGE_KEYS } from "../../../utils/consts";
 
-const initialCardsRender = () => {
-  clearCardsBlock();
-  const history = JSON.parse(localStorage.getItem("history")) || {};
+export default () => {
+  const cardsWrapper = document.createElement("div");
+  cardsWrapper.classList.add("cards-block");
+  cardsWrapper.id = "cards-block";
+  const history =
+    JSON.parse(getLocalStorageField(LOCAL_STORAGE_KEYS.HISTORY)) || {};
   if (Object.keys(history).length !== 0) {
     for (const prop in history) {
-      renderCard(history[prop], prop);
+      cardsWrapper.appendChild(renderCard(history[prop], prop));
     }
-  } else {
-    setNoMatchHTML(`Your history is clean:c`);
+    return cardsWrapper;
   }
+  cardsWrapper.innerHTML = `<span class="no-match">Your history is clean:c</span>`;
+  return cardsWrapper;
 };
-
-export default initialCardsRender;
