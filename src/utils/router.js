@@ -1,10 +1,11 @@
 import { clearBlockById, renderPageById } from "./utils";
+import noMatch from "../components/mainPages/noMathch/noMatch";
 
 function renderPage(routes) {
   clearBlockById("root");
   const { hash } = location;
   const route = routes.find((obj) => obj.route === hash);
-  renderPageById("root", route.content());
+  renderPageById("root", route ? route.content() : noMatch());
 }
 
 const initialRender = (routes, config) => {

@@ -3,26 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a7bf2bc3-e4cf-48d7-b59e-f334ee6e2ed1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/helpers/message/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/helpers/message/message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/helpers/switchButton/switchButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/helpers/switchButton/switchButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/renderDayRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/renderDayRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/home/renderHourRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/home/renderHourRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/morePage/renderMorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/morePage/renderMorePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/addListenerToInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/addListenerToInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/initialCardsRender.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/initialCardsRender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderSearchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/renderSearchPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainPages/searchPage/searchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPages/searchPage/searchPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requester.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/requester.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/consts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/createRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +29,14 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ilichka\git\The-Weather\src\utils\notificationService" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,6 +49,40 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Jest.More page template (1)">
+    <configuration name="More page template (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.test.js" />
+      <test-names>
+        <test-name value="More page template" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="More page template" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/mainPages/morePage/morePage.test.js" />
+      <test-names>
+        <test-name value="More page template" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.More page template (1)" />
+        <item itemvalue="Jest.More page template" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -72,7 +98,8 @@
       <workItem from="1633858547960" duration="55089000" />
       <workItem from="1634122608788" duration="3558000" />
       <workItem from="1634553150003" duration="15878000" />
-      <workItem from="1634600052896" duration="50375000" />
+      <workItem from="1634600052896" duration="53249000" />
+      <workItem from="1634911716821" duration="5461000" />
     </task>
     <servers />
   </component>

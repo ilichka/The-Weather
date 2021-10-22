@@ -1,0 +1,12 @@
+.no-match-page {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 56px;
+  color: #07b299;
+}
+
+.dark-theme {
+  .no-match-page {
+    color: #8e05c2;
+  }
+}
