@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page snapshot Renders correctly template with mock data object 1`] = `
+"
+        <div class=\\"header\\">
+          <div class=\\"header-info\\">
+            <span class=\\"city\\">city</span>
+            <span class=\\"temp\\">temp°</span>
+            <span class=\\"status\\">status</span>
+          </div>
+          <img class=\\"header-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\"  alt=\\"icon\\"/>
+        </div>
+        <div class=\\"info-row\\">
+          <div class=\\"humidity-info\\">
+            <img class=\\"humidity-icon\\" src=\\"test-file-stub\\" alt=\\"water drop\\"/>
+            <span class=\\"humidity\\">humidity%</span>
+          </div>
+          <div class=\\"wind-info\\">
+            <img class=\\"wind-icon\\" src=\\"test-file-stub\\" alt=\\"wind\\"/>
+            <span class=\\"wind-speed\\">windkm/h</span>
+          </div>
+          <div class=\\"pressure-info\\">
+            <img class=\\"pressure-icon\\" src=\\"test-file-stub\\" alt=\\"pressure\\"/>
+            <span class=\\"pressure\\">0.43mBar</span>
+          </div>
+        </div>
+        <div class=\\"hourly-weather\\"><div class=\\"hour-block\\">
+            <span class=\\"time\\">14:00 h</span>
+            <img class=\\"hour-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"hour icon\\"/>
+            <span class=\\"temp\\">8°</span>
+            </div>
+          <div class=\\"hour-block\\">
+            <span class=\\"time\\">18:00 h</span>
+            <img class=\\"hour-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"hour icon\\"/>
+            <span class=\\"temp\\">8°</span>
+            </div>
+          <div class=\\"hour-block\\">
+            <span class=\\"time\\">22:00 h</span>
+            <img class=\\"hour-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"hour icon\\"/>
+            <span class=\\"temp\\">8°</span>
+            </div>
+          <div class=\\"hour-block\\">
+            <span class=\\"time\\">2:00 h</span>
+            <img class=\\"hour-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"hour icon\\"/>
+            <span class=\\"temp\\">8°</span>
+            </div>
+          <div class=\\"hour-block\\">
+            <span class=\\"time\\">6:00 h</span>
+            <img class=\\"hour-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"hour icon\\"/>
+            <span class=\\"temp\\">8°</span>
+            </div>
+          <div class=\\"hour-block\\">
+            <span class=\\"time\\">10:00 h</span>
+            <img class=\\"hour-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"hour icon\\"/>
+            <span class=\\"temp\\">8°</span>
+            </div>
+          </div>
+        <div class=\\"next-days\\"> <div class=\\"day-row\\">
+             <span class=\\"day\\">Thursday</span>
+            <img class=\\"day-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"day icon\\"/>
+            <span class=\\"max-temp\\">9°</span>
+            <span class=\\"min-temp\\">2°</span>
+            </div>
+           <div class=\\"day-row\\">
+             <span class=\\"day\\">Friday</span>
+            <img class=\\"day-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"day icon\\"/>
+            <span class=\\"max-temp\\">9°</span>
+            <span class=\\"min-temp\\">2°</span>
+            </div>
+           <div class=\\"day-row\\">
+             <span class=\\"day\\">Saturday</span>
+            <img class=\\"day-icon\\" src=\\"http://openweathermap.org/img/wn/04d.png\\" alt=\\"day icon\\"/>
+            <span class=\\"max-temp\\">9°</span>
+            <span class=\\"min-temp\\">2°</span>
+            </div>
+          </div>
+     "
+`;

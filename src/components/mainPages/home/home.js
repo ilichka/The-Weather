@@ -7,7 +7,7 @@ import renderDayRow from "./renderDayRow";
 import renderHourRow from "./renderHourRow";
 import { addNotification } from "../../../utils/notificationService/notificationService";
 
-const getHomeHTML = (obj) => {
+export const getHomeHTML = (obj) => {
   const { city, temp, status, humidity, wind, icon, hourly, daily } = obj || {};
   return `
         <div class="header">

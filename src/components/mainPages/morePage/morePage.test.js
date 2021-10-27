@@ -1,14 +1,20 @@
-const { morePage } = require("./morePage");
+import renderMorePage from "./renderMorePage";
 
-const template = ``;
+const data = {
+  first: {
+    city: "city",
+    country: "country",
+    temp: "temp",
+    humidity: "humidity",
+    wind: "wind",
+    icon: "04d",
+  },
+};
 
-test('123',()=>{
-  expect(morePage()).toBe('');
-})
+describe("More page snapshot", () => {
+  it("Renders correctly template with mock data object", () => {
+    const template = renderMorePage(data);
 
-/*
-describe('More page template', () => {
-  it('More page template', () => {
-    expect(template).toBe(morePage());
+    expect(template).toMatchSnapshot();
   });
-});*/
+});
